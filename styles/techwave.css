@@ -43,6 +43,12 @@
     cursor: pointer;
 }
 
+.btn2 {
+    color: #00FF88;
+    background: transparent;
+    border: 2px solid #00FF88;
+
+}
 
 
 
@@ -98,6 +104,59 @@ header nav .menu {
     vertical-align: middle;
 }
 
+#banner {
+    background: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner .container {
+    padding: 101px 0;
+}
+
+.banner-img {
+    background: url("../images/hero-circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-img img {
+    height: 200px;
+
+}
+
+.banner-content {
+    padding-top: 40px;
+}
+
+.banner-content h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+    padding-bottom: 8px;
+
+}
+
+
+.btn-grp {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 24px;
+
+}
+
+
+
+
+
 
 
 /* phone / Small device responsive code */
@@ -118,8 +177,33 @@ header nav .menu {
     .ham-icon {
         display: block;
     }
-}
 
+    #banner {
+        background: url("../images/hero-bg.png"), #1A0B2E;
+        background-repeat: no-repeat;
+        background-position: center 50px;
+        background-size: contain;
+    }
+
+    #banner .container {
+        padding: 40px 0;
+    }
+
+    .banner-img {
+        height: 200px;
+        background-size: contain;
+
+    }
+
+    .banner-img img {
+        height: 80px;
+
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+}
 
 
 
@@ -135,5 +219,31 @@ header nav .menu {
 
     nav .btn {
         display: none;
+    }
+
+    #banner {
+        background: url("../images/hero-bg.png"), #1A0B2E;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    #banner .container {
+        padding: 70px 0;
+    }
+
+    .banner-img {
+        height: 250px;
+        background-size: contain;
+
+    }
+
+    .banner-img img {
+        height: 120px;
+
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
     }
 }
