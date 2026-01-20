@@ -121,16 +121,31 @@ header nav .menu {
     background-repeat: no-repeat;
     background-position: center;
     height: 350px;
+    width: 350px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
 
 .banner-img img {
     height: 200px;
 
+}
+
+.badge {
+    position: absolute;
+    color: #1A0B2E;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border-radius: 25px;
+    box-shadow: 0 3px 27px 0 #00ff889f;
+    top: 12px;
+    right: 23px;
 }
 
 .banner-content {
@@ -144,6 +159,9 @@ header nav .menu {
 
 }
 
+.banner-content p {
+    opacity: 80%;
+}
 
 .btn-grp {
     display: flex;
@@ -191,6 +209,7 @@ header nav .menu {
 
     .banner-img {
         height: 200px;
+        width: 200px;
         background-size: contain;
 
     }
@@ -198,6 +217,12 @@ header nav .menu {
     .banner-img img {
         height: 80px;
 
+    }
+
+    .badge {
+        top: 0px;
+        right: 0px;
+        font-size: .90rem;
     }
 
     .banner-content h1 {
@@ -234,6 +259,7 @@ header nav .menu {
 
     .banner-img {
         height: 250px;
+        width: 250px;
         background-size: contain;
 
     }
@@ -241,6 +267,11 @@ header nav .menu {
     .banner-img img {
         height: 120px;
 
+    }
+
+    .badge {
+        top: 4px;
+        right: 5px;
     }
 
     .banner-content h1 {
