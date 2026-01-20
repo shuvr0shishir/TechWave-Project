@@ -50,6 +50,24 @@
 
 }
 
+.sec-heading {
+    font-size: 3rem;
+}
+
+p {
+    opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Individual classes */
@@ -75,11 +93,6 @@ header nav .menu {
     display: flex;
     align-items: center;
     gap: 2rem;
-}
-
-.logo h2,
-#about .container h2 {
-    font-size: 3rem;
 }
 
 .menu li {
@@ -206,6 +219,63 @@ header nav .menu {
     padding-bottom: 16px;
 }
 
+#speciality {
+    background: #230E3D;
+}
+
+#speciality .container {
+    padding: 120px 0;
+}
+
+#speciality .container h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.special-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+.special-card {
+    padding: 40px;
+    background: #35116564;
+    border-radius: 40px;
+}
+
+.special-card img{
+
+    padding-bottom: 16px;
+}
+.special-card h3 {
+    font-size: 1.5rem;
+    padding-bottom: 16px;
+}
+
+.special-card p{
+    opacity: 60%;
+    line-height: 24px;
+}
+
+
+/* Grid layouts */
+.c1r1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.c1r2 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.c2r1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
 
 
 
@@ -222,8 +292,7 @@ header nav .menu {
         width: 85%;
     }
 
-    .logo h2,
-    #about .container h2 {
+    .sec-heading {
         font-size: 2.5rem;
     }
 
@@ -272,7 +341,25 @@ header nav .menu {
         gap: 30px;
         padding-bottom: 80px;
     }
+    .special-cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .c4r1{
+        grid-column: span 4;
+        grid-row:span 1 ;
+    }
+    .c1r1{
+        grid-column: span 2;
+        grid-row:span 1 ;
+    }
+
+
+
+    
 }
+
+
+
 
 
 
@@ -286,8 +373,7 @@ header nav .menu {
         width: 90%;
     }
 
-    .logo h2,
-    #about .container h2 {
+    .sec-heading {
         font-size: 2rem;
     }
 
@@ -342,4 +428,22 @@ header nav .menu {
         gap: 40px;
         padding-bottom: 40px;
     }
+
+    .special-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .c1r1,
+    .c1r2,
+    .c2r1{
+        grid-column: span 1;
+        grid-row:span 1 ;
+    }
+    .special-card h3{
+        font-size: 1.3rem;
+    }
+
+
+
+
+
 }
