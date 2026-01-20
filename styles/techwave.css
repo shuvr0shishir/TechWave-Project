@@ -244,7 +244,8 @@ header nav .menu {
 }
 
 #specialty .container h2,
-#features .container h2 {
+#features .container h2,
+#host .container h2 {
     text-align: center;
     padding-bottom: 40px;
 }
@@ -268,18 +269,21 @@ header nav .menu {
 }
 
 .special-card h3,
-.f-card-content h3 {
+.f-card-content h3,
+.host-card-content h3 {
     font-size: 1.5rem;
     padding-bottom: 16px;
 }
 
 .special-card p,
-.f-card-content p {
+.f-card-content p,
+.host-card-content p {
     opacity: 60%;
     line-height: 24px;
 }
 
-#features {
+#features,
+#host {
     background-color: #1A0B2E;
 }
 
@@ -305,11 +309,12 @@ header nav .menu {
 }
 
 .f-card-content h3,
-.f-card-content p {
-    padding-bottom: 12px;
+.f-card-content p,
+.host-card-content p {
+    padding-bottom: 16px;
 }
 
-.f-card-content span{
+.f-card-content span {
     color: #00FF88;
     font-weight: 600;
     line-height: 24px;
@@ -318,13 +323,44 @@ header nav .menu {
     gap: 5px;
 }
 
+#host .container {
+    padding-bottom: 120px;
+}
 
+.host-card {
+    background: #35116564;
+    padding: 40px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
+.host-card .host-card-img img {
+    max-width: 200px;
+}
 
+.host-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 
+}
 
+.host-social .link {
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.353);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
+.host-social .link a img {
+    vertical-align: middle;
+}
 
 
 
@@ -408,6 +444,10 @@ header nav .menu {
 
     .feature-cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #host .container {
+        padding-bottom: 80px;
     }
 
 
@@ -502,14 +542,30 @@ header nav .menu {
     }
 
     .special-card h3,
-    .f-card-content h3 {
+    .f-card-content h3,
+    .host-card-content h3 {
         font-size: 1.3rem;
     }
+
     .feature-cards {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .host-card .host-card-img img {
+        max-width: 150px;
+    }
 
+    #host .container {
+        padding-bottom: 40px;
+    }
+
+    .host-social {
+        justify-content: center;
+    }
 
 }
