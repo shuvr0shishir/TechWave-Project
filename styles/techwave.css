@@ -41,6 +41,7 @@
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn2 {
@@ -74,10 +75,74 @@ p {
     grid-row: span 1;
 }
 
+/* hover effects */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
 
+    50% {
+        transform: scale(0.96);
+    }
 
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes colors {
+    0% {
+        transform: scale(1);
+        color:  rgb(254, 250, 26);
+    }
 
+    
+    35% {
+        transform: scale(0.96);
+        color: rgb(255, 0, 195);
+    }
+    
+    80%{
+        transform: scale(1);
+        color: rgb(140, 0, 255);
+    }
+    100%{
+        color:  rgb(254, 250, 26);
+    }
+}
 
+.menu li:active,
+.platform:active {
+    transform: scale(0.96);
+}
+
+.menu li a:hover {
+    color: #00FF88;
+}
+
+.btn:hover {
+    background: linear-gradient(220deg, #9100F8, #0911fb, #00FF88);
+    color: white;
+    transform: scale(0.96);
+}
+
+.btn2:hover {
+    border: 2px solid white;
+    box-shadow: 0 0 15px 0 #00000064;
+    background: #dcdcdc36;
+}
+
+.badge:hover {
+    transform: scale(1.2);
+    background-color: yellow;
+    animation-play-state: paused;
+}
+
+.special-card:hover,
+.feature-card:hover,
+.host-card:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 15px 0 #0000002e;
+}
 
 
 
@@ -104,6 +169,8 @@ header nav {
     padding: 1.5rem 0;
 }
 
+
+
 header nav .menu {
     display: flex;
     align-items: center;
@@ -112,6 +179,7 @@ header nav .menu {
 
 .menu li {
     list-style-type: none;
+    transition: transform 0.2s ease;
 }
 
 .menu li a {
@@ -120,6 +188,7 @@ header nav .menu {
     font-weight: 500;
     line-height: 120%;
     opacity: 90%;
+    transition: 0.5s ease;
 }
 
 .ham-icon {
@@ -175,6 +244,8 @@ header nav .menu {
     box-shadow: 0 3px 27px 0 #00ff889f;
     top: 12px;
     right: 23px;
+    transition: all 0.3s ease;
+    animation: pulse 1.5s ease-in-out infinite;
 }
 
 .banner-content {
@@ -185,6 +256,7 @@ header nav .menu {
     font-size: 3.75rem;
     font-weight: 800;
     padding-bottom: 8px;
+    animation: colors 1.5s ease-in-out infinite;
 
 }
 
@@ -262,6 +334,7 @@ footer .container {
     padding: 40px;
     background: #35116564;
     border-radius: 40px;
+    transition: transform 0.3s ease;
 }
 
 .special-card img {
@@ -297,6 +370,7 @@ footer .container {
 .feature-card {
     background: #35116564;
     border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
 .feature-card iframe {
@@ -335,6 +409,7 @@ footer .container {
     display: flex;
     align-items: center;
     gap: 24px;
+    transition: transform 0.3s ease;
 }
 
 .host-card .host-card-img img {
@@ -395,6 +470,7 @@ footer .container .platforms .platform {
     display: flex;
     gap: 5px;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 
