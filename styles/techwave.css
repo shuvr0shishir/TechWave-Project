@@ -58,6 +58,21 @@ p {
     opacity: 80%;
 }
 
+/* Grid layouts */
+.c1r1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.c1r2 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.c2r1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
 
 
 
@@ -223,11 +238,13 @@ header nav .menu {
     background-color: #230E3D;
 }
 
-#specialty .container {
+#specialty .container,
+#features .container {
     padding: 120px 0;
 }
 
-#specialty .container h2 {
+#specialty .container h2,
+#features .container h2 {
     text-align: center;
     padding-bottom: 40px;
 }
@@ -250,32 +267,58 @@ header nav .menu {
     padding-bottom: 16px;
 }
 
-.special-card h3 {
+.special-card h3,
+.f-card-content h3 {
     font-size: 1.5rem;
     padding-bottom: 16px;
 }
 
-.special-card p {
+.special-card p,
+.f-card-content p {
     opacity: 60%;
     line-height: 24px;
 }
 
-
-/* Grid layouts */
-.c1r1 {
-    grid-column: span 1;
-    grid-row: span 1;
+#features {
+    background-color: #1A0B2E;
 }
 
-.c1r2 {
-    grid-column: span 1;
-    grid-row: span 2;
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.c2r1 {
-    grid-column: span 2;
-    grid-row: span 1;
+.feature-card {
+    background: #35116564;
+    border-radius: 20px;
 }
+
+.feature-card iframe {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.feature-card .f-card-content {
+    padding: 24px;
+}
+
+.f-card-content h3,
+.f-card-content p {
+    padding-bottom: 12px;
+}
+
+.f-card-content span{
+    color: #00FF88;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
 
 
 
@@ -343,7 +386,9 @@ header nav .menu {
         gap: 30px;
         padding-bottom: 80px;
     }
-    #specialty .container {
+
+    #specialty .container,
+    #features .container {
         padding: 80px 0;
     }
 
@@ -361,6 +406,9 @@ header nav .menu {
         grid-row: span 1;
     }
 
+    .feature-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 
 
@@ -437,7 +485,8 @@ header nav .menu {
         padding-bottom: 40px;
     }
 
-    #specialty .container {
+    #specialty .container,
+    #features .container {
         padding: 40px 0;
     }
 
@@ -452,10 +501,13 @@ header nav .menu {
         grid-row: span 1;
     }
 
-    .special-card h3 {
+    .special-card h3,
+    .f-card-content h3 {
         font-size: 1.3rem;
     }
-
+    .feature-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 
 
